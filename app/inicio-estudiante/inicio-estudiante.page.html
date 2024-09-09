@@ -1,0 +1,81 @@
+<ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    Elias Figueroa
+    <ion-list>
+      <ion-item button routerLink="/codigo-qr">
+        <ion-icon name="qr-code-outline"></ion-icon>
+        QR
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item button routerLink="/cursos">
+        <ion-icon name="book-outline"></ion-icon>
+        CLASES
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item button routerLink="/justificacion">
+        <ion-icon name="mail-unread-outline"></ion-icon>
+        JUSTIFICACION
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="abrirMenu()">
+        <ion-icon name="list-outline"></ion-icon>
+        <ion-menu-button menu="menu-content"></ion-menu-button>
+
+      </ion-button>
+    </ion-buttons>
+    <ion-title>inicio-estudiante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="menu-content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">Bienvenido</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>aplicacion de asistencias y cursos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Esta aplicacion les permitira a profesores y estudiantes a tomar las asistencia de manera mas rapida y efectiva,
+      tambien mostrara cursos/materias que estes cursando
+
+     
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Sobre el instituto</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <ion-img src="assets/king.webp"></ion-img>
+      En el Instituto King, nos dedicamos a proporcionar una educación de alta calidad, diseñada para formar a los líderes del mañana. 
+      Con más de 20 años de experiencia, 
+      nos destacamos por nuestra excelencia académica, 
+      innovación pedagógica y un ambiente que fomenta el desarrollo integral de nuestros estudiantes.
+
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

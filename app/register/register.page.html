@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <a [routerLink]="['/', 'home']">
+        <ion-button >
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+      </a>
+      
+    </ion-buttons>
+
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-toolbar>
+      <ion-title size="large">Registro De alumnos</ion-title>
+    </ion-toolbar>
+    <div class="container" style="width: 100%; text-align: center;">
+      <img src="assets/instituto.jfif" alt="king" style="width: 200px; height: 200px; object-fit: cover;">
+    </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input type="text" [(ngModel)]="apellido"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="correo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Número de teléfono</ion-label>
+        <ion-input type="tel" [(ngModel)]="telefono"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" expand="block">Registrarse</ion-button>
+  </form>
+</ion-content>
+

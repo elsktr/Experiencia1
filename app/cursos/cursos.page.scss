@@ -1,0 +1,39 @@
+ion-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+ion-row{
+    justify-content: center;
+}
+ion-col{
+    padding: 5px;
+}
+ion-car{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+ion-card-header{
+    background-color: #0b3049;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10 0 0 ;
+
+
+}
+ion-card-tittle{
+    font-size: 18px;
+    font-weight: bold;
+}
+ion-card-content{
+    padding: 20px;
+}
+ion-card img{
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 10px ;
+}
